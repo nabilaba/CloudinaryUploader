@@ -13,7 +13,7 @@ const uploadCloudinary = async (file, setProgress) => {
   formData.append("tags", TAGS);
 
   const res = await axios.post(
-    `https://api.cloudinary.com/v1_1/${"pusatngoding"}/image/upload`,
+    `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`,
     formData,
     {
       headers: {
